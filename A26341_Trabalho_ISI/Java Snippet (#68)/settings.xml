@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="scriptImports" type="xstring" value="// Your custom imports:%%00010import java.io.BufferedWriter;%%00010import java.io.FileWriter;%%00010import java.io.IOException;%%00010import java.text.SimpleDateFormat;%%00010import java.io.File;%%00010"/>
+        <entry key="scriptFields" type="xstring" value="// Your custom variables:%%00010String workflowPath = System.getProperty(&quot;user.dir&quot;); // Obtém o diretório do fluxo de trabalho%%00010String logDirectory = workflowPath + &quot;/logs&quot;; // Define o diretório de logs relativo ao fluxo de trabalho%%00010SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;yyyyMMdd&quot;);%%00010String dataAtual = dateFormat.format(new Date());%%00010String filePath = logDirectory + &quot;/log_&quot; + dataAtual + &quot;.txt&quot;;%%00010File directory = new File(logDirectory);%%00010SimpleDateFormat timeFormat = new SimpleDateFormat(&quot;HH:mm:ss&quot;);%%00010String horaAtual = timeFormat.format(new Date());%%00010String errorMessage = v_FailingNodeMessage;%%00010"/>
+        <entry key="scriptBody" type="xstring" value="// Enter your code here:%%00010%%00010%%00010%%00010out_LogPAth = filePath;%%00010%%00010if (!directory.exists()) directory.mkdirs();%%00010%%00010%%00010boolean hasError = errorMessage != null &amp;&amp; !errorMessage.isEmpty(); // Verifica se houve um erro%%00010%%00010try {%%00010    // Criar um BufferedWriter para escrever no fricheiro (com append true)%%00010    BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true));%%00010    %%00010    // Se houve um erro, registrar a mensagem de erro%%00010    if (hasError) {%%00010        writer.write(horaAtual + &quot; - Erro registrado: &quot; + errorMessage);%%00010    } else {%%00010        // Caso contrário, regista que o fluxo foi concluído com sucesso%%00010        writer.write(horaAtual + &quot; - Fluxo concluído com sucesso.&quot;);%%00010    }%%00010    writer.newLine(); // Escrever uma nova linha%%00010    %%00010    // Fechar o arquivo%%00010    writer.close();%%00010} catch (IOException e) {%%00010    // Captura de possíveis erros ao escrever no arquivo%%00010    System.out.println(&quot;Erro ao escrever no ficheiro: &quot; + e.getMessage());%%00010}%%00010%%00009%%00009%%00010%%00010%%00010"/>
+        <config key="jarFiles">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="outCols">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="outVars">
+            <entry key="array-size" type="xint" value="1"/>
+            <config key="0">
+                <entry key="Name" type="xstring" value="LogPAth"/>
+                <entry key="JavaName" type="xstring" value="out_LogPAth"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <entry key="Type" type="xstring" value="STRING"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <config key="inCols">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="inVars">
+            <entry key="array-size" type="xint" value="2"/>
+            <config key="0">
+                <entry key="Name" type="xstring" value="FailingNode"/>
+                <entry key="JavaName" type="xstring" value="v_FailingNode"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <entry key="Type" type="xstring" value="STRING"/>
+            </config>
+            <config key="1">
+                <entry key="Name" type="xstring" value="FailingNodeMessage"/>
+                <entry key="JavaName" type="xstring" value="v_FailingNodeMessage"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <entry key="Type" type="xstring" value="STRING"/>
+            </config>
+        </config>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="runOnExecute" type="xboolean" value="false"/>
+        <config key="bundles">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="Registo em Log%%00010do processo"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="0"/>
+        <entry key="y-coordinate" type="xint" value="0"/>
+        <entry key="width" type="xint" value="0"/>
+        <entry key="height" type="xint" value="0"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="0"/>
+        <entry key="defFontSize" type="xint" value="-1"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.jsnippet.JavaSnippetNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Java Snippet"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.3.0.v202406141017"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Javasnippet"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.javasnippet.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.3.0.v202406141017"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Java Snippet"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

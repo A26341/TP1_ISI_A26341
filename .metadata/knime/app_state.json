@@ -1,0 +1,39 @@
+{
+  "version" : "5.3.2.v202409051351",
+  "projects" : [ {
+    "name" : "A26341_TP1_ISI",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "A26341_TP1_ISI"
+    }
+  }, {
+    "name" : "A26341_Trabalho_ISI__BACKUP",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "A26341_Trabalho_ISI__BACKUP"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "A26341_TP1_ISI",
+    "timeUsed" : "2024-10-26T00:52:07.8341165+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "A26341_TP1_ISI"
+    }
+  }, {
+    "name" : "A26341_Trabalho_ISI__BACKUP",
+    "timeUsed" : "2024-10-26T00:53:05.8907499+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "A26341_Trabalho_ISI__BACKUP"
+    }
+  } ]
+}

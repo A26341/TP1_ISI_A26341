@@ -1,0 +1,6 @@
+https://nominatim.openstreetmap.org/search?q=1539+FARMINGTON+AVE&format=jsonv2
+https://nominatim.openstreetmap.org/search?q=230+WAKELEE+AVE&format=json&limit=1
+https://nominatim.openstreetmap.org/search?q=missing&format=json&limit=1
+https://nominatim.openstreetmap.org/search?q=93+MAIN+ST&format=json&limit=1
+
+https://www.google.com

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2024-10-18T16:08:27.246+01:00</last-modified>
+    <description>Joins two tables based on a selected column value in the TOP input table being between the values in the BOTTOM input table
+
+12 November 2022 @takbb Brian Bates</description>
+    <component-type>Manipulator</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZUlEQVR4nK2QAQrAIAwD85a9x8/6wg0EobZNibpAUEs9U/FeCr8AAARvA5biCYDZg4OrBB6SAhm5fFVNEOY9SSD9gSqaYAeQJnh6G57y51lLoVUj2y8A9VIJsA12lQBsXmtfs/oANj4Zdchzz9YAAAAASUVORK5CYII=</icon>
+    <in-ports>
+        <port name="">Table containing source value</port>
+        <port name="">Table containing the value to "lookup" </port>
+    </in-ports>
+    <out-ports>
+        <port name="Joined Output">The resultant output table from the joining of the two tables</port>
+    </out-ports>
+</component-metadata>

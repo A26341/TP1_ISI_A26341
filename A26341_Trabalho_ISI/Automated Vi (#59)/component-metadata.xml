@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2024-10-18T21:40:26.239+01:00</last-modified>
+    <description>This Component automatically visualizes data in a dashboard based on the most interesting statistical properties of the input columns.  A detailed explanation is available for each chart inside the dashboard. No configuration is necessary in order to automatically create the dashboard via the Component Composite View.
+
+The Component runs a various statistical tests on the input data. Candidate columns are ranked for each visualization. The columns with highest rank are, when possible, visualized in a chart dedicated to precise statistical test.
+
+Statistical tests used:
+
+- Skewness, Kurtosis and Spikeyness tests of numerical column distribution
+- Correlation test between numerical columns
+- Correlation test between categorical columns
+- Correlation test between numerical and encoded categorical columns
+- Correlation test between categorical and encoded numerical columns
+- ANOVA test (between categorical and numerical)
+
+At the bottom of the dashboard you can also select the columns to be removed from the data set.</description>
+    <component-type>Visualizer</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcElEQVR4nGNgoDUwMDAQMDEx6TcyMmoA4gJyDFAAakwAsUGGDFIDQH6D+hHDn2gGTICqmWBsbByAbEADNjYuFyCLYWgCmrwfxAfS88kyAMbGpniYG5AAi0Zg4K2H0TDFoABFlsOIRooBUiIiCVPFcgAwM2Hob2VycwAAAABJRU5ErkJggg==</icon>
+    <in-ports>
+        <port name="Input Data to Visualize">Unexplored data to be visualized.</port>
+    </in-ports>
+    <out-ports>
+        <port name="Output Data">Input data with only the columns that were not removed in the interactive view.</port>
+    </out-ports>
+</component-metadata>

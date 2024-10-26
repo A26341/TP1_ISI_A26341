@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2024-10-18T17:04:06.920+01:00</last-modified>
+    <description>Return the number of rows in the input data table as a flow variable. The flow variable name can be specified in configuration. The default name is Row Count
+
+Workflow by @Bruno29a.
+
+Addition of configurable/dynamic flow variable and component icon by @takbb
+Updated to use String Configuration by @ajackson</description>
+    <component-type>Source</component-type>
+    <in-ports>
+        <port name="Table In">Table for which a row count is required</port>
+    </in-ports>
+    <out-ports>
+        <port name="Row Count"/>
+    </out-ports>
+</component-metadata>

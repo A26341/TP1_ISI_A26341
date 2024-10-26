@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2024-10-18T21:40:26.247+01:00</last-modified>
+    <description>In this Wrapped Metanode we automatically visualize charts in a Composite View. Those visualizations were selected automatically through different statistical tests. This will enable the user to easily explore the data.</description>
+    <component-type>Learner</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA5klEQVR4nLWS0RHCIAyGGcENdAShcMcjI3QDO4IblA3KBnUDR3A189+FMy1BfVDuuIaQfP2TYMy/1pmWc6547xfY3yadhmEYYVPibK09wkegDB/ucO4mI5D2RIE3AqR6B5vVJIBVCOi0L59U8g9G9ZIuirDvCFZiVk0+JC5Sdi0HXymZy8mbxsIRY9zUVRvH9hWbcg44I1aqNTyqd4BZArjhLwDPPO9LQGmYiISzr4QQ2rchqRT0kECptknk5EnrugJI6hghky4zT6Tgu5O9alNpIJWOOutTBph9/afckVqgRm3Yr9YTqktagORCU/EAAAAASUVORK5CYII=</icon>
+    <in-ports>
+        <port name="Detected Visualizations">A table listing the columns to visualize.</port>
+        <port name="Data ti Visualize">A table with the data. This table should have all the columns mentioned in the other inputs of the Wrapped Metanode.</port>
+        <port name="Ranked Columns ">A table listing all columns with different scores related to missing, constant and unique values.</port>
+        <port name="Port 4"/>
+    </in-ports>
+    <out-ports>
+        <port name="Data">The same data that was used as input to visualize the charts.</port>
+        <port name="Flagged Columns">Those are the columns the user flagged. You can do different things with this output depending on the purpose of the web application.</port>
+    </out-ports>
+</component-metadata>

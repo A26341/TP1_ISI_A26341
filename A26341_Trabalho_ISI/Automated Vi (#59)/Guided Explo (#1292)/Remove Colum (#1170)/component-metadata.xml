@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-metadata content-type="text/plain" xmlns="http://www.knime.org/core/node/workflow/metadata/v1.0">
+    <last-modified>2024-10-18T21:40:27.996+01:00</last-modified>
+    <description/>
+    <component-type>Visualizer</component-type>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA1klEQVR4nLWT0Q2DMAxEGYEROoIh8J8RukEZgQ3KBmUDuklXq6+6Q2mVqKRSI0Uhjv18dkLT/GuYWRtCWPu+X3xOPwF8Rq7mkLkaMgxDhAJXcnHGyffXKgUIRiCyCwZ7rYpbAmuzpYCudRxHS7PARhUT9tmGgq6VUmfuV69/+3oL7nRWIJu1CIYzKlhZRixBNkhnzbuT1KXJ+DZeyfYDdTt1EiDXed3Qm5EQ0SNt7acKBluxJyylWAbOu667H34TaZN1I/xXtkMAOj9Qot5EtgdHh0D4fgKU+Fke6Ebp/wAAAABJRU5ErkJggg==</icon>
+    <in-ports>
+        <port name="Port 1"/>
+        <port name="Port 2"/>
+    </in-ports>
+    <out-ports>
+        <port name="Port 1"/>
+        <port name="Port 2"/>
+    </out-ports>
+</component-metadata>

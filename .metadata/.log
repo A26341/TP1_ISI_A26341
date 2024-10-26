@@ -1,0 +1,46 @@
+!SESSION 2024-10-08 20:27:28.599 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_PT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10052 2024-10-10 18:29:45.183
+!MESSAGE Cannot continue the operation.  There is another install operation in progress.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10052 2024-10-10 18:29:45.189
+!MESSAGE Cannot continue the operation.  There is another install operation in progress.
+!SESSION 2024-10-15 20:17:43.640 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_PT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10052 2024-10-16 23:59:09.904
+!MESSAGE Cannot continue the operation.  There is another install operation in progress.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 10052 2024-10-16 23:59:09.909
+!MESSAGE Cannot continue the operation.  There is another install operation in progress.
+!SESSION 2024-10-18 13:17:46.032 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_PT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.knime.product 1 0 2024-10-18 19:00:58.160
+!MESSAGE ShellExec command: C:\Users\jdani\AppData\Local\Programs\KNIME\plugins\sdl.harvard.geospatial.channel.bin.win32.x86_64_1.2.0.202401111534/bin/create_env.bat
+
+!ENTRY org.knime.product 1 0 2024-10-18 19:00:58.163
+!MESSAGE ShellExec directory : C:\Users\jdani\AppData\Local\Programs\KNIME\plugins\sdl.harvard.geospatial.channel.bin.win32.x86_64_1.2.0.202401111534/bin
+
+!ENTRY org.knime.product 1 0 2024-10-18 19:09:48.398
+!MESSAGE Standard output: No KNIME_PYTHON_PACKAGE_REPO_URL set, downloading packages
+        1 file(s) copied.
+        1 file(s) copied.
+The extension is sdl_harvard_geospatial
+The bundling home is set to: C:\Users\jdani\AppData\Local\Programs\KNIME\bundling\envs
+The bundling_parent contains a backslash.
+The bundle path is set to: C:\Users\jdani\AppData\Local\Programs\KNIME\bundling\envs\sdl_harvard_geospatial
+
