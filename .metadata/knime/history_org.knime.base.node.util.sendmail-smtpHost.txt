@@ -1,2 +1,0 @@
-smtp.gmail.com
-smtp.office365.com

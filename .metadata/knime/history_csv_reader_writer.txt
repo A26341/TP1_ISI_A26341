@@ -1,8 +1,0 @@
-.\A26341_Trabalho_ISI\logs\log.txt
-.\A26341_Trabalho_ISI\logs\log
-./A26341_Trabalho_ISI\input\Real_Estate_Sales_2001-2022_GL.csv
-C:\Users\jdani\Desktop\LESI\3ANO\ISI\KnimeWorkspace\A26341_Trabalho_ISI\input\Real_Estate_Sales_2001-2022_GL.csv
-A26341_Trabalho_ISI
-knime://knime.workflow/input/Real_Estate_Sales_2001-2022_GL.csv
-C:\Users\jdani\Desktop\LESI\3ANO\ISI\KnimeWorkspace\A26341_Trabalho_ISI\Real_Estate_Sales_2001-2022_GL.csv
-C:\Users\jdani\Desktop\LESI\3ANO\ISI\KnimeWorkspace\A26341_Trabalho_ISI\diabetes.csv
